@@ -6,7 +6,7 @@ spring:
             server:
                 git:
                     default-label: dev
-                    uri:
+                    uri: https://github.com/GeraldineBecerra/ms-java
                     search-paths: config-data
     application:
         name: config-service

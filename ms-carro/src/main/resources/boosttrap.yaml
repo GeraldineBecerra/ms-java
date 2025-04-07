@@ -1,0 +1,9 @@
+spring:
+    aplication:
+      name: ms-carro
+    cloud:
+        config:
+            enabled: true
+            uri: http://localhost:8081
+
+# guarda el nombre del microservicio y la uri del service config
