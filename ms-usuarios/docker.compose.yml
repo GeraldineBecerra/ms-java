@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  oracle-db:
+    image: gvenzl/oracle-xe
+    container_name: oracle-xe
+    ports:
+      - "1521:1521"   # Puerto para conexión SQL
+      - "8080:8080"   # Puerto para Oracle APEX (si lo necesitás)
+    environment:
+      ORACLE_PASSWORD: admin
+    restart: unless-stopped
