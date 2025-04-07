@@ -1,7 +1,9 @@
 spring:
-    aplication:
-      name: ms-usuarios
-    cloud:
-        config:
-            enabled: true
-            uri: http://localhost:8081
+  application:
+    name: ms-usuarios
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  config:
+    import: configserver:http://localhost:8081  # Importa la configuración desde el Config Server
